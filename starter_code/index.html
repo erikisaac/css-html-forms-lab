@@ -98,6 +98,7 @@
 
 		var main = document.querySelector('#main');
 		function makeResults() {
+			console.log('JS open!');
 			var results = document.createElement('section');
 			results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
 			results.className = 'container results';
@@ -114,10 +115,17 @@
 
 
 		$("form").on("submit", function(event){
-
+			console.log('Submit pushed.');
 		    // Stop the form from submitting
+		    event.preventDefault();
 
 	    	// Append the new <section> created above.
+	    	makeResults();
+
+	    	var $onceUpon = "Once upon a time there was a Developer named " + $("input#name").val() + ".";
+	    	console.log($onceUpon);
+
+	    	$('.results').append($onceUpon);
 
 	    	/*
 			
