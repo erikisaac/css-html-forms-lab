@@ -124,7 +124,7 @@
 	    	// Append the new <section> created above.
 	    	makeResults();
 
-	    	var $onceUpon = "Once upon a time there was a Developer named " + $("input#name").val() + ". " + $("input#name").val() + " came to General Asssembly to " + $("select#verb-1").val() + " the great mountain of programming knowledge. " + $("textarea#mission").val() + " , " + $("input#name").val() + " shouted. Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN. In the end, their success can be contributed entirely to their  ADJECTIVE2 list each one checked, comma-separated  NOUN2.";
+	    	var $onceUpon = "Once upon a time there was a Developer named " + $("input#name").val() + ". " + $("input#name").val() + " came to General Asssembly to " + $("select#verb-1").val() + " the great mountain of programming knowledge. " + $("textarea#mission").val() + ", " + $("input#name").val() + " shouted. Though " + $('input[name=sentiment]:checked').val() + ", " + $("input#name").val() + " was able to overcome all obstacles with the power of their " + $("input#noun-1").val() + ". In the end, their success can be contributed entirely to their " + $("input[name=adjective-2]:checked").val() + " " + $("input#noun-2").val() + ".";
 	    	console.log($onceUpon);
 
 	    	$('.results').append($onceUpon);
