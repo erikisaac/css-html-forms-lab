@@ -11,6 +11,15 @@
 	Make the Title twice as large as the body text, bold, and spaced evenly.
 */
 
+body {
+	font-family: 'Proza Libre', Arial, sans-serif;
+}
+
+h1 {
+	font-size: 200%;
+	font-weight: bold;
+}
+
 /*-------- Main Styles --------*/
 
 /* 
@@ -20,6 +29,8 @@
 
 	Every container, form, input, and button should have rounded corners.
 */
+
+
 
 /*-------- Form Styles --------*/
 
